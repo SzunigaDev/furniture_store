@@ -1,0 +1,473 @@
+<!--
+index.html - Página principal del sitio web Muebles Zúñiga
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Metadatos del documento -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="developer" content="Sergio I. Zúñiga C.">
+  <title>Muebles Zúñiga</title>
+
+  <!-- Enlaces a archivos de estilo externos (Bootstrap, Font Awesome, alertify) y local (index.css) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css"/>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+	<!-- Barra de navegación -->
+  <!-- ... (código de la barra de navegación) -->
+	<nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+		<a id="brand" class="navbar-brand" href="/">
+			<img src="favicon.ico" alt="..." width="30" height="24" class="img-fluid m-2" style="filter: invert(1);">
+			Muebles Zúñiga
+		</a>
+
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+			aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item"> <a class="nav-link" href="#home">Inicio</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="#item">Productos</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="#category">Categorías</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="#location">Ubicación</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="#contact">Contactanos</a> </li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Contenedor principal -->
+  <div id="content-container">
+    <!-- Sección de Inicio -->
+    <!-- ... (código de la sección de Inicio) -->
+		<div id="home" class="position-relative section">
+			<img id="categoria-imagen" src="img/principal.jpg" class="d-block w-100" alt="...">
+			<div class="welcome-text position-absolute top-50 start-50 translate-middle text-center text-white">
+				<h1>Bienvenido a Mueblería Zúñiga</h1>
+				<h3 id="dynamic-text"></h3>
+			</div>
+		</div>
+
+		<!-- Sección de Productos -->
+    <!-- ... (código de la sección de Productos) -->
+		<h2 class="text-center mb-4 mt-4 bg-light pt-4 pb-4 rounded-0">Productos</h2>
+		<div id="item" class="container mt-4 section">
+			<div class="row">
+				<div class="col-12 body">
+					<div class="q-pa-md">
+						<div class="card mb-3 rounded-0 example-item">
+							<div class="row g-0 align-items-center">
+								<div class="col-md-8">
+									<img src="img/producto1.jpg" class="img-fluid rounded-0" alt="...">
+								</div>
+								<div class="col-md-4 q-card-section">
+									<div class="card-body text-center">
+										<h5 class="card-title">Recámara con Área de Estudio Integrada</h5>
+										<p class="card-text">Crea un espacio perfecto para descansar y trabajar con
+											nuestra recámara que
+											incluye un área de estudio integrada. Diseñada para ofrecer comodidad y
+											funcionalidad, esta recámara
+											es ideal para aquellos que buscan un lugar versátil y acogedor en su hogar.
+										</p>
+										<a href="#" class="btn btn-sm btn-primary rounded-0">Agregar al carrito</a>
+										<p class="card-text"> <small class="text-body-secondary"> Última actualización
+												hace 3 minutos </small>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-6 body">
+					<div class="q-pa-md">
+						<div class="card mb-3 rounded-0  example-item">
+							<img src="img/producto2.jpg" class="card-img-top rounded-0" alt="...">
+							<div class="card-body text-center  q-card-section">
+								<h5 class="card-title">Conjunto para Estancia Elegante</h5>
+								<p class="card-text">Transforma tu sala con nuestro conjunto para estancia. Diseñado
+									para brindar
+									comodidad y estilo, este conjunto es perfecto para tus momentos de relax en casa.
+								</p>
+								<a href="#" class="btn btn-sm btn-primary rounded-0">Agregar al carrito</a>
+								<p class="card-text"> <small class="text-body-secondary"> Última actualización hace 3
+										días </small> </p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-6 body">
+					<div class="q-pa-md">
+						<div class="card mb-3 rounded-0  example-item">
+							<img src="img/producto3.jpg" class="card-img-top rounded-0" alt="...">
+							<div class="card-body text-center  q-card-section">
+								<h5 class="card-title">Recámara</h5>
+								<p class="card-text">Una hermosa recámara que transformará tu espacio de descanso. Este
+									conjunto incluye
+									muebles elegantes y cómodos para asegurar una experiencia relajante.</p>
+								<a href="#" class="btn btn-sm btn-primary rounded-0">Agregar al carrito</a>
+								<p class="card-text"> <small class="text-body-secondary"> Última actualización hace 3
+										minutos </small> </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-4 body">
+					<div class="q-pa-md">
+						<div class="card mb-3 rounded-0  example-item">
+							<img src="img/producto4.jpg" class="card-img-top rounded-0" alt="...">
+							<div class="card-body text-center  q-card-section">
+								<h5 class="card-title">Sofá Elegande y Acogedor</h5>
+								<p class="card-text">Disfruta del confort y estilo con nuestro sofá de 3 plazas. Este sofá
+									espacioso es
+									perfecto para relajarte, ya sea solo o con amigos y familia. Su diseño elegante y
+									duradero lo convierte
+									en una adición ideal para tu sala de estar.</p>
+								<a href="#" class="btn btn-sm btn-primary rounded-0">Agregar al carrito</a>
+								<p class="card-text"><small class="text-body-secondary">Última actualización hace 2
+										días</small></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-4 body">
+					<div class="q-pa-md">
+						<div class="card mb-3 rounded-0  example-item">
+							<img src="img/producto5.jpg" class="card-img-top rounded-0" alt="...">
+							<div class="card-body text-center  q-card-section">
+								<h5 class="card-title">Conjunto para Estancia Moderno</h5>
+								<p class="card-text">Transforma tu hogar con nuestra colección de muebles para estancias.
+									Desde sofás
+									cómodos hasta elegantes mesas de centro, cada pieza está diseñada para brindar estilo y
+									comodidad a tu
+									espacio. Dale un toque único a tu hogar con esta estancia bien diseñada.</p>
+								<a href="#" class="btn btn-sm btn-primary rounded-0">Agregar al carrito</a>
+								<p class="card-text"><small class="text-body-secondary">Última actualización hace 4
+										días</small></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-4 body">
+					<div class="q-pa-md">
+						<div class="card mb-3 rounded-0  example-item">
+							<img src="img/producto6.jpg" class="card-img-top rounded-0" alt="...">
+							<div class="card-body text-center  q-card-section">
+								<h5 class="card-title">Sillón de 2 Plazas</h5>
+								<p class="card-text">Experimenta la elegancia y la comodidad con nuestro sillón de 2 plazas.
+									Perfecto para
+									espacios más íntimos, este sillón ofrece un lugar acogedor para descansar. Su diseño
+									compacto y moderno
+									lo convierte en una opción versátil para cualquier rincón de tu hogar.</p>
+								<a href="#" class="btn btn-sm btn-primary rounded-0">Agregar al carrito</a>
+								<p class="card-text"><small class="text-body-secondary">Última actualización hace 1
+										día</small></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Sección de Categorías -->
+		 <!-- ... (código de la sección de Categorías) -->
+		<h2 class="text-center mb-4 mt-4 bg-light pt-4 pb-4 rounded-0">Categorías</h2>
+		<div id="category" class="container mt-4 section">
+			<div class="row">
+				<div class="col-4 body">
+					<div class="q-pa-md">
+						<div class="card mb-3 rounded-0  example-item">
+							<img src="img/categoria1.jpg" class="card-img-top rounded-0" alt="...">
+							<div class="card-body text-center  q-card-section">
+								<h5 class="card-title">Oficina</h5>
+								<p class="card-text">Crea un espacio de trabajo funcional y elegante con nuestra colección
+									de mobiliario
+									de oficina. Desde escritorios modernos hasta sillas ergonómicas, cada pieza está
+									diseñada para mejorar
+									tu productividad y brindar comodidad durante largas jornadas laborales. Equipa tu
+									oficina con muebles
+									que reflejen tu estilo y faciliten tu rutina diaria.
+								</p>
+								<a id="" data-name="Oficina" class="category-link btn btn-sm btn-primary rounded-0"
+									href="javascript:void(0)">
+									Explorar
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-4 body">
+					<div class="q-pa-md">
+						<div class="card mb-3 rounded-0  example-item">
+							<img src="img/categoria2.jpg" class="card-img-top rounded-0" alt="...">
+							<div class="card-body text-center  q-card-section">
+								<h5 class="card-title">Hogar</h5>
+								<p class="card-text">Transforma tu hogar en un santuario de confort y estilo con nuestra
+									colección de
+									muebles para el hogar. Desde muebles de sala acogedores hasta mesas y decoraciones
+									elegantes,
+									encontrarás todo lo que necesitas para crear un ambiente acogedor y agradable. Descubre
+									cómo nuestros
+									muebles pueden realzar cada rincón de tu hogar.
+								</p>
+								<a id="" data-name="Hogar" class="category-link btn btn-sm btn-primary rounded-0"
+									href="javascript:void(0)">
+									Explorar
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-4 body">
+					<div class="q-pa-md">
+						<div class="card mb-3 rounded-0  example-item">
+							<img src="img/categoria3.jpg" class="card-img-top rounded-0" alt="...">
+							<div class="card-body text-center  q-card-section">
+								<h5 class="card-title">Cocina</h5>
+								<p class="card-text">Dale vida a tu cocina con nuestra selección de muebles y accesorios.
+									Desde elegantes
+									juegos de mesa hasta prácticos organizadores, cada artículo está diseñado para hacer de
+									tu cocina un
+									espacio funcional y estilizado. Descubre cómo puedes mejorar la estética y la eficiencia
+									de tu cocina
+									con nuestra colección única.
+								</p>
+								<a id="" data-name="Cocina" class="category-link btn btn-sm btn-primary rounded-0"
+									href="javascript:void(0)">
+									Cocina
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Sección de Ubicación -->
+		<!-- ... (código de la sección de Ubicación) -->
+		<h2 class="text-center mb-4 mt-4 bg-light pt-4 pb-4 rounded-0">Ubicación</h2>
+		<div id="location" class="container mt-4 section">
+			<div class="row">
+				<div class="col-12">
+
+					<div style="width: 100%">
+						<iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+							src="https://maps.google.com/maps?width=100%25&amp;height=450&amp;hl=en&amp;q=Tecnol%C3%B3gico%20y%20Teofilo%20Bor%C3%BAnda%20S/N+(Muebles%20Zu%C3%B1iga)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+
+		<!-- Sección de Contactanos -->
+		<!-- ... (código de la sección de Contáctanos) -->
+		<h2 class="text-center mb-4 mt-4 bg-light pt-4 pb-4 rounded-0">Contactanos</h2>
+		<div id="contact" class="container mt-4 section">
+			<section class="mb-4">
+				<p class="text-center w-responsive mx-auto mb-5">
+					¿Tienes alguna pregunta?
+					Por favor, no dudes en contactarnos directamente.
+					Nuestro equipo te responderá en cuestión de horas para ayudarte.
+				</p>
+				<div class="row">
+					<div class="col-md-9 mb-md-0 mb-5">
+						<form id="contact-form" name="contact-form" action="mail.php" method="POST">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="md-form mb-0">
+										<label for="name" class="">Tu nombre</label>
+										<input type="text" id="name" name="name" class="form-control rounded-0">
+									</div>
+								</div>
+
+								<div class="col-md-6">
+									<div class="md-form mb-0">
+										<label for="email" class="">Tu correo</label>
+										<input type="email" id="email" name="email" class="form-control rounded-0">
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-12">
+									<div class="md-form mb-0">
+										<label for="subject" class="">Asunto</label>
+										<input type="text" id="subject" name="subject" class="form-control rounded-0">
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-12">
+									<div class="md-form">
+										<label for="message">Tu mensaje</label>
+										<textarea type="text" id="message" name="message" rows="2"
+											class="form-control md-textarea rounded-0"></textarea>
+									</div>
+								</div>
+							</div>
+						</form>
+
+						<div class="mt-3 text-center text-md-left">
+							<a class="btn btn-primary d-block rounded-0" onclick="validateForm();" href="javascript:void(0)">Enviar</a>
+						</div>
+						<div id="status" class="alert alert-danger rounded-0 text-center mt-1 p-0" role="alert">Por
+							favor, completa todos los campos.
+						</div>
+					</div>
+
+					<div class="col-md-3 text-center">
+						<ul class="list-unstyled mb-0">
+							<li><i class="fas fa-map-marker-alt fa-2x"></i>
+								<p>Av. Tecnológico KM14, Col. Colinas de Juárez, Cd. Juárez, Chih. México</p>
+							</li>
+							<li><i class="fas fa-phone mt-4 fa-2x"></i>
+								<p>+ 52 656 123 4567</p>
+							</li>
+							<li><i class="fas fa-envelope mt-4 fa-2x"></i>
+								<p>contact@mail.com</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</div>
+
+	</div>
+
+	<!-- Botón para volver arriba -->
+	<a id="goToTop" href="#" class="btn btn-primary rounded-circle px-3">
+		<i class="fas fa-arrow-up"></i>
+	</a>
+
+	 <!-- Pie de página -->
+  <!-- ... (código del pie de página) -->
+	<footer class="mt-4 bg-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-4">
+					<h4 class="text-center mt-4 mb-4">
+						Categorias
+					</h4>
+					<div class="list-group list-group-flush text-center rounded-0 mb-4">
+						<!-- <small>
+							<a id="link-item" data-name="Cocina"
+								class="category-link list-group-item list-group-item-light list-group-item-action lh-1 border-0"
+								href="javascript:void(0)">
+								Cocina
+							</a>
+						</small>
+
+						<small>
+							<a id="" data-name="Jardin"
+								class="category-link list-group-item list-group-item-light list-group-item-action lh-1 border-0"
+								href="javascript:void(0)">
+								Jardinería
+							</a>
+						</small>
+
+						<small>
+							<a id="" data-name="Cochera"
+								class="category-link list-group-item list-group-item-light list-group-item-action lh-1 border-0"
+								href="javascript:void(0)">
+								Cochera
+							</a>
+						</small>
+
+						<small>
+							<a id="" data-name="Dormitorios"
+								class="category-link list-group-item list-group-item-light list-group-item-action lh-1 border-0"
+								href="javascript:void(0)">
+								Dormitorios
+							</a>
+						</small> -->
+						<small> <a class="list-group-item list-group-item-light list-group-item-action lh-1 border-0"
+								href="/templates/error/500.html"> Cocina </a> </small>
+
+						<small> <a class="list-group-item list-group-item-light list-group-item-action lh-1 border-0"
+								href="/templates/error/500.html"> Jardinería </a> </small>
+
+						<small> <a class="list-group-item list-group-item-light list-group-item-action lh-1 border-0"
+								href="/templates/error/404.html"> Cochera </a> </small>
+
+						<small> <a class="list-group-item list-group-item-light list-group-item-action lh-1 border-0"
+								href="/templates/error/404.html"> Dormitorios </a> </small>
+					</div>
+				</div>
+
+				<div class="col-4">
+					<h4 class="text-center mt-4 mb-4">
+						Sobre nosotros
+					</h4>
+					<div class="list-group list-group-flush text-center rounded-0 mb-4">
+						<small><a class="list-group-item list-group-item-light list-group-item-action lh-1 border-0"
+								href="#questions">Nuestra historia</a></small>
+						<small><a class="list-group-item list-group-item-light list-group-item-action lh-1 border-0"
+								href="#help">Misión, Visión y Valores</a></small>
+						<small><a class="list-group-item list-group-item-light list-group-item-action lh-1 border-0"
+								href="#security">Politicas de priacidad</a></small>
+						<small><a class="list-group-item list-group-item-light list-group-item-action lh-1 border-0"
+								href="#security">Términos de servicio</a></small>
+					</div>
+				</div>
+
+				<div class="col-4">
+					<h4 class="text-center mt-4 mb-4">
+						Soporte
+					</h4>
+					<div class="list-group list-group-flush text-center rounded-0 mb-4">
+						<small><a class="list-group-item list-group-item-light list-group-item-action lh-1 border-0"
+								href="#questions">Preguntas frecuentes</a></small>
+						<small><a class="list-group-item list-group-item-light list-group-item-action lh-1 border-0"
+								href="#help">Ayuda en línea</a></small>
+						<small><a class="list-group-item list-group-item-light list-group-item-action lh-1 border-0"
+								href="#security">Confianza y seguridad</a></small>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12 text-center font-monospace">
+					&copy; Copyright - <span class="fw-bold">Created by: Sergio I. Zúñiga C.</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scripts de Bootstrap y archivos JS locales -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+	</script>
+	<script src="js/core.js"></script>
+	<script src="js/index.js"></script>
+
+</body>
+
+</html>

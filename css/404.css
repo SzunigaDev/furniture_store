@@ -1,0 +1,55 @@
+/*
+404.css - Estilos para la página de error 404
+*/
+
+/* Estilo para el cuerpo de la página */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilos para la sección principal de la página 404 */
+.page_404 {
+    padding: 40px 0;
+    background: #fff;
+    font-family: 'Arvo', serif;
+}
+
+/* Estilos para la imagen en la página 404 */
+.page_404 img {
+    width: 100%;
+}
+
+/* Estilos para el fondo de la sección 404 con una imagen de fondo */
+.four_zero_four_bg {
+    background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 400px;
+    background-position: center;
+}
+
+/* Estilos para el encabezado h1 en el fondo de la sección 404 */
+.four_zero_four_bg h1 {
+    font-size: 80px;
+}
+
+/* Estilos para el subencabezado h3 en el fondo de la sección 404 */
+.four_zero_four_bg h3 {
+    font-size: 80px;
+}
+
+/* Estilos para los enlaces en la página 404 */
+.link_404 {
+    color: #fff!important;
+    padding: 10px 20px;
+    background: #39ac31;
+    margin: 20px 0;
+    display: inline-block;
+}
+
+/* Estilos para el contenedor de la caja de contenido en la página 404 */
+.contant_box_404 {
+    margin-top: -50px;
+}

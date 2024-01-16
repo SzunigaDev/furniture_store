@@ -1,0 +1,127 @@
+/*
+index.css - Estilos para la página principal
+*/
+
+/* Estilos para las secciones con efecto parallax */
+.parallax-section {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px; 
+  color: #fff; 
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilos para la capa de opacidad sobre el fondo parallax */
+.parallax-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad según tus necesidades */
+}
+
+/* Estilos para elementos con id 'brand' y 'nav-link' */
+#brand, #nav-link {
+  text-shadow: 2px 2px 4px black, 0 0 1em white, 0 0 0.2em white; 
+}
+
+/* Estilos para el enlace activo en la barra de navegación */
+.navbar-nav .nav-item.is-active a {
+  background-color: #ffffff;
+  color: #000 !important;
+  border-radius: 0px;
+  padding: 8px 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Estilos para el elemento con id 'status' (oculto por defecto) */
+#status {
+  display: none;
+}
+
+/* Animación de agitación para el elemento con la clase 'shake' */
+.shake {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(5px); }
+}
+
+/* Estilos para el texto con la clase 'ok' (color verde y margen izquierdo) */
+.ok {
+  color: green;
+  margin-left: 5px;
+}
+
+/* Estilos para el botón de volver arriba ('goToTop') */
+#goToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.5s ease;
+}
+
+#goToTop:hover {
+  background-color: #0056b3;
+  opacity: 0.8;
+}
+
+/* Estilos para una sección de prueba */
+.q-pa-md {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.example-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.example-item:hover {
+  transform: scale(1.1);
+}
+
+.example-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.q-card-section {
+  padding: 16px;
+  background-color: #fff;
+}
+
+/* Estilos para el cuerpo de la página */
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}

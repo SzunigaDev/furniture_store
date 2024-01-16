@@ -1,0 +1,161 @@
+<!--
+category.html - Página de categoría
+-->
+
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="developer" content="Sergio I. Zúñiga C.">
+  <title>Muebles Zúñiga | Categoría </title>
+  <!-- Enlace al archivo CSS de Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Enlace al archivo de estilos personalizados -->
+  <link rel="stylesheet" href="../../css/index.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+    <a id="brand" class="navbar-brand" href="../../index.html">
+      <img src="../../favicon.ico" alt="..." width="30" height="24" class="img-fluid m-2"
+        style="filter: invert(1);">
+      Muebles Zúñiga
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <!-- Enlaces de navegación -->
+        <li class="nav-item active">
+          <a class="nav-link" href="#home">Inicio</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#item">Productos</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#category">Categorías</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="content-container">
+    <!-- Sección de inicio -->
+    <div id="home" class="position-relative">
+      <!-- Imagen principal de la categoría -->
+      <img id="categoria-imagen" src="../../img/principal.jpg" class="d-block w-100" alt="...">
+      <div class="welcome-text position-absolute top-50 start-50 translate-middle text-center text-white">
+        <!-- Encabezado dinámico de la categoría -->
+        <h1 id="category-header">Sigue disfrutando Mueblería Zúñiga</h1>
+        <!-- Texto dinámico animado -->
+        <h3 id="dynamic-text"></h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="mt-4 bg-light">
+    <div class="container">
+      <!-- Sección de categorías -->
+      <div class="col-4">
+        <h4 class="text-center mt-4 mb-4">
+          Categorias
+        </h4>
+        <div class="list-group list-group-flush text-center rounded-0 mb-4">
+          <!-- Enlaces de categorías -->
+          <small>
+            <a id="link-item" data-name="Cocina"
+              class="category-link list-group-item list-group-item-light list-group-item-action lh-1 border-0"
+              href="javascript:void(0)">
+              Cocina
+            </a>
+          </small>
+          <small>
+            <a id="" data-name="Jardin"
+              class="category-link list-group-item list-group-item-light list-group-item-action lh-1 border-0"
+              href="javascript:void(0)">
+              Jardinería
+            </a>
+          </small>
+          <small>
+            <a id="" data-name="Cochera"
+              class="category-link list-group-item list-group-item-light list-group-item-action lh-1 border-0"
+              href="javascript:void(0)">
+              Cochera
+            </a>
+          </small>
+          <small>
+            <a id="" data-name="Dormitorios"
+              class="category-link list-group-item list-group-item-light list-group-item-action lh-1 border-0"
+              href="javascript:void(0)">
+              Dormitorios
+            </a>
+          </small>
+        </div>
+      </div>
+
+      <!-- Sección "Sobre nosotros" -->
+      <div class="col-4">
+        <h4 class="text-center mt-4 mb-4">
+          Sobre nosotros
+        </h4>
+        <div class="list-group list-group-flush text-center rounded-0 mb-4">
+          <!-- Enlaces sobre nosotros -->
+          <small><a class="list-group-item list-group-item-light list-group-item-action lh-1 border-0"
+              href="#questions">Nuestra historia</a></small>
+          <small><a class="list-group-item list-group-item-light list-group-item-action lh-1 border-0"
+              href="#help">Misión, Visión y Valores</a></small>
+          <small><a class="list-group-item list-group-item-light list-group-item-action lh-1 border-0"
+              href="#security">Politicas de priacidad</a></small>
+          <small><a class="list-group-item list-group-item-light list-group-item-action lh-1 border-0"
+              href="#security">Términos de servicio</a></small>
+        </div>
+      </div>
+
+      <!-- Sección "Soporte" -->
+      <div class="col-4">
+        <h4 class="text-center mt-4 mb-4">
+          Soporte
+        </h4>
+        <div class="list-group list-group-flush text-center rounded-0 mb-4">
+          <!-- Enlaces de soporte -->
+          <small><a class="list-group-item list-group-item-light list-group-item-action lh-1 border-0"
+              href="#questions">Preguntas frecuentes</a></small>
+          <small><a class="list-group-item list-group-item-light list-group-item-action lh-1 border-0"
+              href="#help">Ayuda en línea</a></small>
+          <small><a class="list-group-item list-group-item-light list-group-item-action lh-1 border-0"
+              href="#security">Confianza y seguridad</a></small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección de derechos de autor -->
+    <div class="row">
+      <div class="col-12 text-center font-monospace">
+        &copy; Copyright - <span class="fw-bold">Created by: Sergio I. Zúñiga C.</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts de Bootstrap y JavaScript personalizado -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+</script>
+<script src="../../js/core.js"></script>
+<script src="../../js/category.js"></script>
+
+</body>
+
+</html>
