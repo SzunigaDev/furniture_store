@@ -42,6 +42,11 @@ index.css - Estilos para la página principal
   font-weight: bold;
 }
 
+.navbar-nav .nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.5); /* Blanco con opacidad 0.5 */
+  transition: background-color 0.3s ease; /* Agrega transición suave */
+}
+
 /* Estilos para el elemento con id 'status' (oculto por defecto) */
 #status {
   display: none;
